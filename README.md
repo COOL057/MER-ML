@@ -26,21 +26,69 @@ The dataset described in the manuscript contains 217 observations from 47 compos
 
 This module contains the processed model inputs, feature configuration and scripts for stability-based feature selection, CatBoost training and evaluation. The saved results cover RCV, LOCO and LOPZO, as well as the 17-feature baseline comparison.
 
+| File or directory | Purpose |
+| --- | --- |
+| `data_clean/` | Processed input workbook, composition table, feature array and target arrays. |
+| `configs_wide/` | Feature-engineering configuration. |
+| `nested_core.py` | Shared data, feature and cross-validation logic. |
+| `feature_stability_selection.py` | Stability-based feature selection. |
+| `train_engineering_228.py` | Model training and hyperparameter optimization. |
+| `evaluate_and_collect_residuals.py` | Scenario evaluation and collection of predictions, residuals and SHAP values. |
+| `unified_results_clean/` | Saved LOCO and LOPZO results. |
+| `unified_results_rcv3/` | Three-repeat RCV results and three-scenario comparison tables. |
+| `unified_results_17Baseline/` | Saved 17-feature baseline results and comparison with the knowledge model. |
+| `shap_analysis_17_vs_15_nested/` | SHAP analysis for the 17-feature baseline and 15-feature knowledge model. |
+| `run_*.py`, `compare_*.py`, `verify_results.py` | Execution, comparison and result-checking utilities. |
+
 ### 02. Risk and SHAP analysis
 
 This module examines how model behavior changes across transformation regimes. It includes paired SHAP comparisons between LOPZO and RCV, training-zone SHAP contributions and partial η² analysis of composition novelty and process zones.
+
+| File or directory | Purpose |
+| --- | --- |
+| `calculate_paired_response.py` | Calculates paired SHAP response changes for the same observations. |
+| `paired_shap_response/` | Paired samples, feature changes and summaries by zone. |
+| `training_shap_analysis/` | Training-zone SHAP analysis and results. |
+| `partial_eta2_analysis/` | Effect-size calculation script, analysis data and partial η² result tables. |
 
 ### 03. Robustness and coverage
 
 This module assesses the sensitivity of risk localization to a 4 × 4 process-zone partition and examines the relationship between training-data coverage and prediction error. It includes analysis scripts and the associated coverage results.
 
+| Directory | Purpose |
+| --- | --- |
+| `quartile_sensitivity/` | Four-by-four process-zone sensitivity scripts and saved results. |
+| `quartile_sensitivity_alternative/` | Alternative sensitivity-analysis implementation and its configuration. |
+| `lopzo_coverage/` | Saved data for LOPZO coverage analysis. |
+| `transformation_risk_and_coverage/` | Scripts for processing conditions, error concentration and feature or zone coverage. |
+
 ### 04. BS-GSR calibration
 
 This module contains the regional BS-GSR evaluation code and three-fold results. It estimates local corrections using labeled calibration samples in selected risk zones and reports the corresponding held-out predictions and errors.
 
+| File or directory | Purpose |
+| --- | --- |
+| `evaluate_bs_gsr_oos.py` | Regional calibration and three-fold evaluation. |
+| `sr_patch_results_oos_ridge/` | Saved results for each property and the combined `oos_summary_all.csv` table. |
+
 ### 05. Candidate design and uncertainty
 
 This module brings together candidate compositions and transformed features, prediction and visualization scripts, regional empirical error estimates and candidate-design results. It supports the reliability-guided candidate exploration presented in the manuscript.
+
+| File or directory | Purpose |
+| --- | --- |
+| `data_clean/design/` | Candidate compositions, transformation-temperature export, feature-generation script and candidate model inputs. |
+| `results_final/EXP_3_Stability/` | Saved full-data models and associated training outputs. |
+| `01_predict_and_classify.py` | Candidate prediction, correction, interval assessment and classification. |
+| `02_trusted_design_visualization.py` | Candidate-design visualization and selected-design presentation. |
+| `design_outputs/` | Saved candidate predictions, selected designs and decision chart. |
+| `sr_patch_preprocessing_v5_bias_separated/`, `sr_patch_results_v5_bias_separated/` | Inputs and saved outputs for regional bias-separated calibration. |
+| `uq_results_v5_bias_separated/` | Regional empirical uncertainty and coverage results. |
+| `uq_final/`, `uq_final_1x4/` | Saved uncertainty visualizations. |
+| `risk_coverage_results/` | Risk and coverage summaries and associated tables. |
+| `raw17_vs_raw17plus_physics_risk/`, `rcv_descriptor_contribution/` | Descriptor comparison and contribution-analysis materials. |
+| `figures/`, `supplementary_data/` | Additional saved figures and supplementary table. |
+| Other `.py` files | Calibration, uncertainty, risk-coverage and visualization calculations. |
 
 The manuscript and its Supporting Information define descriptor names, processing conditions, missing-value handling, validation and statistical methods.
 
@@ -105,5 +153,5 @@ The prediction script reads the candidate features in `data_clean/design/candida
 
 The authors' original code is available under the MIT License; see [LICENSE](LICENSE). For permission to use the authors' data, result tables and trained model artifacts, please contact Yuqing Yang at yqyang0507@163.com before use; see [DATA_LICENSE.md](DATA_LICENSE.md). The authors' original documentation is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-These terms apply only to material that the authors have the authority to license. Third-party data, software, figures and other materials retain their own rights and licence terms. The availability of Thermo-Calc-derived outputs does not grant rights to the proprietary software or databases. Please cite the associated manuscript and repository when using the materials. 
+These terms apply only to material that the authors have the authority to license. Third-party data, software, figures and other materials retain their own rights and licence terms. The availability of Thermo-Calc-derived outputs does not grant rights to the proprietary software or databases. Please cite the associated manuscript and repository when using the materials. Manuscript and DOI citation details will be added when the release is finalized.
 
