@@ -105,5 +105,5 @@ The prediction script reads the candidate features in `data_clean/design/candida
 
 The authors' original code is available under the MIT License; see [LICENSE](LICENSE). For permission to use the authors' data, result tables and trained model artifacts, please contact Yuqing Yang at yqyang0507@163.com before use; see [DATA_LICENSE.md](DATA_LICENSE.md). The authors' original documentation is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-These terms apply only to material that the authors have the authority to license. Third-party data, software, figures and other materials retain their own rights and licence terms. The availability of Thermo-Calc-derived outputs does not grant rights to the proprietary software or databases. Please cite the associated manuscript and repository when using the materials. Manuscript and DOI citation details will be added when the release is finalized.
+These terms apply only to material that the authors have the authority to license. Third-party data, software, figures and other materials retain their own rights and licence terms. The availability of Thermo-Calc-derived outputs does not grant rights to the proprietary software or databases. Please cite the associated manuscript and repository when using the materials. 
 
