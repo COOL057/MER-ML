@@ -1,0 +1,136 @@
+{
+  "target": "Rm",
+  "model_type": "optimized_catboost_v4_FE_dynamic",
+  "input_dim": 15,
+  "feature_names": [
+    "Ti",
+    "τ",
+    "ΔFe",
+    "Mo",
+    "Mn",
+    "ΔTI",
+    "Ve",
+    "Ta",
+    "Si",
+    "δb",
+    "DC_Ti",
+    "Ta_Ti_diff",
+    "Ceq",
+    "C_Cr",
+    "C_DTI"
+  ],
+  "remove_low_info_features": false,
+  "low_info_features_removed": [],
+  "selected_base_features": [
+    "Ti",
+    "τ",
+    "ΔFe",
+    "Mo",
+    "Mn",
+    "ΔTI",
+    "Ve",
+    "Ta",
+    "Si",
+    "δb"
+  ],
+  "selected_interaction_features": [
+    "DC_Ti",
+    "Ta_Ti_diff",
+    "Ceq",
+    "C_Cr",
+    "C_DTI"
+  ],
+  "optimization_r2": 0.9023403670492852,
+  "final_r2": 0.8977514154006929,
+  "final_std": 0.00750665246731548,
+  "best_params": {
+    "depth": 8,
+    "learning_rate": 0.09469501570369918,
+    "iterations": 597,
+    "l2_leaf_reg": 4.130926079577639,
+    "min_data_in_leaf": 19,
+    "subsample": 0.8435643715383903,
+    "bagging_temperature": 2.2233572759278797,
+    "random_strength": 3.6783434254689324,
+    "colsample_bylevel": 0.61887545926894,
+    "avg_best_iteration": 304
+  },
+  "final_iterations": 364,
+  "avg_best_iteration": 304,
+  "n_trials": 400,
+  "early_stopped": false,
+  "feature_importance": [
+    17.48075518429049,
+    11.020553414607322,
+    3.303475600068678,
+    4.438032713106456,
+    6.624917325926346,
+    5.2013103244309695,
+    3.693867144614762,
+    4.619703239357766,
+    7.588331937865508,
+    2.3445283563641874,
+    5.725581279596255,
+    6.970650100356601,
+    11.202887875801741,
+    6.955722910106821,
+    2.829682593506128
+  ],
+  "search_space": {
+    "depth": {
+      "low": 3,
+      "high": 8,
+      "type": "int"
+    },
+    "learning_rate": {
+      "low": 0.02,
+      "high": 0.15,
+      "type": "float",
+      "log": true
+    },
+    "iterations": {
+      "low": 150,
+      "high": 1000,
+      "type": "int"
+    },
+    "l2_leaf_reg": {
+      "low": 3.0,
+      "high": 300.0,
+      "type": "float",
+      "log": true
+    },
+    "min_data_in_leaf": {
+      "low": 2,
+      "high": 30,
+      "type": "int"
+    },
+    "subsample": {
+      "low": 0.5,
+      "high": 0.85,
+      "type": "float"
+    },
+    "bagging_temperature": {
+      "low": 0.0,
+      "high": 5.0,
+      "type": "float"
+    },
+    "random_strength": {
+      "low": 0.5,
+      "high": 30.0,
+      "type": "float",
+      "log": true
+    },
+    "colsample_bylevel": {
+      "low": 0.6,
+      "high": 0.95,
+      "type": "float"
+    }
+  },
+  "optimization_strategy": {},
+  "n_splits": 10,
+  "loss_function": "RMSE",
+  "use_log_transform": false,
+  "use_winsorize": false,
+  "model_path": "/home/student03/tree_model_v2/optimized_catboost/results_final/EXP_3_Stability/Rm_EXP_3_Stability_Rm/Rm_final_model.cbm",
+  "config_path": "/home/student03/tree_model_v2/optimized_catboost/results_final/EXP_3_Stability/Rm_EXP_3_Stability_Rm/Rm_model_config.json"
+}

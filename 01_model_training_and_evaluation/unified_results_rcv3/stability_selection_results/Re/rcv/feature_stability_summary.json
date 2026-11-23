@@ -1,0 +1,39 @@
+{
+  "target": "Re",
+  "scenario": "rcv",
+  "n_folds": 30,
+  "features_in_all_folds": [
+    "Ceq",
+    "DC_Ti",
+    "Ni",
+    "Ta_Ti_diff",
+    "Ti",
+    "Ve",
+    "Z",
+    "ΔFe",
+    "δb",
+    "τ"
+  ],
+  "features_in_any_fold": [
+    "Al",
+    "C_Cr",
+    "C_DTI",
+    "Ceq",
+    "DC_Ti",
+    "Mn",
+    "Mo",
+    "Ni",
+    "Si",
+    "Ta_Ti_diff",
+    "Ti",
+    "Ve",
+    "Z",
+    "ΔFe",
+    "ΔTA",
+    "ΔTI",
+    "δb",
+    "τ"
+  ],
+  "mean_pairwise_jaccard": 0.8499774622492675,
+  "interpretation": "Descriptive cross-fold consistency; not a confidence interval or independent replicate count."
+}

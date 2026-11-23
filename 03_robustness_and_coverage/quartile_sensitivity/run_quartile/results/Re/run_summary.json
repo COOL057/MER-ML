@@ -1,0 +1,12 @@
+{
+  "target": "Re",
+  "complete": true,
+  "n_folds": 16,
+  "expected_folds": 16,
+  "overall": {
+    "r2": 0.7670517958465208,
+    "mae": 113.40229232143348,
+    "rmse": 166.1296425478863,
+    "n_samples": 176
+  }
+}

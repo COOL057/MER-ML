@@ -1,0 +1,2 @@
+target,zone_id,mu,sigma,sample_size,role,zone_label,message
+A,6,-0.048113577208703205,0.5982119082129957,6,warning_only,High Delta_TI x Short tau,Z6 is treated as an overlap-risk warning zone and excluded from both zone-bias and symbolic-trend calibration.

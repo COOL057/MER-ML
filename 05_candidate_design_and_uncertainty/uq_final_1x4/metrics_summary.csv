@@ -1,0 +1,53 @@
+target,level,group,sample_count,r2,mae,rmse,q_final
+Rm,global,all,189,0.82,100.55,147.72,
+Rm,by_role,calibration,46,0.81,112.66,146.20,
+Rm,by_role,other,137,0.87,84.04,119.31,
+Rm,by_role,warning,6,-3.07,384.85,445.51,
+Rm,by_zone,Low ΔTI × Short τ,19,0.80,135.48,174.95,293.45
+Rm,by_zone,Low ΔTI × Mid τ,30,0.79,101.00,157.01,178.11
+Rm,by_zone,Low ΔTI × Long τ,20,0.95,54.76,71.37,144.73
+Rm,by_zone,Mid ΔTI × Short τ,27,0.81,96.61,121.97,198.56
+Rm,by_zone,Mid ΔTI × Mid τ,22,0.91,57.08,91.27,127.24
+Rm,by_zone,Mid ΔTI × Long τ,14,0.88,66.81,78.26,131.22
+Rm,by_zone,High ΔTI × Short τ,6,-3.07,384.85,445.51,875.81
+Rm,by_zone,High ΔTI × Mid τ,22,0.84,90.03,110.11,161.04
+Rm,by_zone,High ΔTI × Long τ,29,0.75,110.89,140.56,243.50
+Re,global,all,176,0.72,125.63,183.28,
+Re,by_role,calibration,36,0.74,130.98,162.29,
+Re,by_role,other,134,0.81,106.21,152.19,
+Re,by_role,warning,6,-6.61,527.44,556.77,
+Re,by_zone,Low ΔTI × Short τ,14,0.59,104.64,120.99,220.47
+Re,by_zone,Low ΔTI × Mid τ,29,0.69,139.55,205.46,312.23
+Re,by_zone,Low ΔTI × Long τ,20,0.89,65.76,84.40,155.71
+Re,by_zone,Mid ΔTI × Short τ,22,0.67,147.75,183.80,264.53
+Re,by_zone,Mid ΔTI × Mid τ,21,0.85,103.27,145.94,265.55
+Re,by_zone,Mid ΔTI × Long τ,13,0.82,62.04,73.44,125.06
+Re,by_zone,High ΔTI × Short τ,6,-6.61,527.44,556.77,896.31
+Re,by_zone,High ΔTI × Mid τ,22,0.85,105.75,130.82,234.58
+Re,by_zone,High ΔTI × Long τ,29,0.80,123.02,170.51,274.27
+A,global,all,189,0.83,1.83,2.83,
+A,by_role,calibration,51,0.64,3.33,4.53,
+A,by_role,other,132,0.92,1.31,1.88,
+A,by_role,warning,6,-0.63,0.46,0.60,
+A,by_zone,Low ΔTI × Short τ,19,0.88,1.80,2.58,6.00
+A,by_zone,Low ΔTI × Mid τ,30,0.91,1.23,1.66,3.08
+A,by_zone,Low ΔTI × Long τ,20,0.89,1.02,1.73,2.58
+A,by_zone,Mid ΔTI × Short τ,27,0.96,0.97,1.27,2.57
+A,by_zone,Mid ΔTI × Mid τ,22,0.91,1.28,1.74,3.26
+A,by_zone,Mid ΔTI × Long τ,14,0.76,1.93,2.52,4.93
+A,by_zone,High ΔTI × Short τ,6,-0.63,0.46,0.60,1.43
+A,by_zone,High ΔTI × Mid τ,22,0.55,2.75,3.81,6.38
+A,by_zone,High ΔTI × Long τ,29,0.66,3.76,5.01,9.19
+Ak,global,all,199,0.73,14.86,19.28,
+Ak,by_role,calibration,66,0.60,16.89,20.68,
+Ak,by_role,other,127,0.77,14.27,18.92,
+Ak,by_role,warning,6,0.80,5.08,6.74,
+Ak,by_zone,Low ΔTI × Short τ,19,0.81,11.65,14.86,29.29
+Ak,by_zone,Low ΔTI × Mid τ,25,0.73,20.69,25.71,37.05
+Ak,by_zone,Low ΔTI × Long τ,20,0.77,14.92,18.46,31.32
+Ak,by_zone,Mid ΔTI × Short τ,20,0.77,11.70,17.11,28.23
+Ak,by_zone,Mid ΔTI × Mid τ,25,0.71,11.85,14.76,21.40
+Ak,by_zone,Mid ΔTI × Long τ,18,0.60,13.63,19.16,28.99
+Ak,by_zone,High ΔTI × Short τ,6,0.80,5.08,6.74,11.49
+Ak,by_zone,High ΔTI × Mid τ,32,0.70,13.54,18.14,29.04
+Ak,by_zone,High ΔTI × Long τ,34,0.45,20.05,22.82,37.09

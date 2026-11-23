@@ -1,0 +1,10 @@
+target,zone_id,zone_label,role,n,q_base,q_zone_raw,q_final,delta_q_pct,t_factor,actual_coverage_%,note
+Ak,0,Low Delta_TI x Short tau,other,19,28.212,28.212,29.285,-3.8,1.038,94.7,other|global_q=30.23(ref)
+Ak,1,Low Delta_TI x Mid tau,other,25,36.028,36.028,37.045,-2.8,1.028,92.0,other|global_q=30.23(ref)
+Ak,2,Low Delta_TI x Long tau,other,20,30.229,30.229,31.316,-3.6,1.036,95.0,other|global_q=30.23(ref)
+Ak,3,Mid Delta_TI x Short tau,other,20,27.251,27.251,28.231,-3.6,1.036,95.0,other|global_q=30.23(ref)
+Ak,4,Mid Delta_TI x Mid tau,other,25,20.814,20.814,21.402,-2.8,1.028,92.0,other|global_q=30.23(ref)
+Ak,5,Mid Delta_TI x Long tau,other,18,27.86,27.86,28.985,-4.0,1.04,94.4,other|global_q=30.23(ref)
+Ak,6,High Delta_TI x Short tau,warning,6,9.974,9.974,11.486,-15.2,1.152,100.0,HIGH_RISK|global_q=30.23(ref)
+Ak,7,High Delta_TI x Mid tau,calibration,32,35.583,28.423,29.04,18.4,1.022,90.6,calibration|global_q=30.23(ref)
+Ak,8,High Delta_TI x Long tau,calibration,34,41.922,36.35,37.09,11.5,1.02,91.2,calibration|global_q=30.23(ref)

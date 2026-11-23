@@ -1,0 +1,153 @@
+{
+  "method": "paired LOPZO versus three out-of-fold RCV repeats",
+  "input_files": [
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_rcv3\\residuals\\Rm_cv_predictions.csv",
+      "sha256": "c641dc6c92a8424d53022de22c032b3ddb56fc7eec12f447766fae30e092c500"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\parallel_results\\Rm\\residuals\\Rm_lopzo_predictions.csv",
+      "sha256": "c12ed0688c0f43f7683464358a1a40bd4d826021443aee0d746c32ba6574b50b"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_rcv3\\residuals\\Re_cv_predictions.csv",
+      "sha256": "2e6686a97f687e8bddf93f9173a4970c36e5c5195455c0a9f29ad724727f1b8b"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\parallel_results\\Re\\residuals\\Re_lopzo_predictions.csv",
+      "sha256": "8ed5620869b3cca6753c9c48c37f7afabff513f518051108c5344adc0e45e0ea"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_rcv3\\residuals\\A_cv_predictions.csv",
+      "sha256": "a96a331db5611c501ddc40d14d3c431c2e4bc854343672e93690ad44f84db870"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\parallel_results\\A\\residuals\\A_lopzo_predictions.csv",
+      "sha256": "e1d49da711b16a90e0e505b1f8d7789747fa05c82a3920dc81911d77b9882695"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_rcv3\\residuals\\Ak_cv_predictions.csv",
+      "sha256": "ae896663e70c57895a302f038a01507dc80d62f6493b252941e3a00e4dfc5365"
+    },
+    {
+      "path": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\parallel_results\\Ak\\residuals\\Ak_lopzo_predictions.csv",
+      "sha256": "36a29855bc8756237ffb60ed6b1ccf8e5122aa9bd93a0a799a89e4e11e77829f"
+    }
+  ],
+  "checks": [
+    {
+      "target": "Rm",
+      "repeat": 0,
+      "n_samples": 189,
+      "checks_passed": true
+    },
+    {
+      "target": "Rm",
+      "repeat": 1,
+      "n_samples": 189,
+      "checks_passed": true
+    },
+    {
+      "target": "Rm",
+      "repeat": 2,
+      "n_samples": 189,
+      "checks_passed": true
+    },
+    {
+      "target": "Re",
+      "repeat": 0,
+      "n_samples": 176,
+      "checks_passed": true
+    },
+    {
+      "target": "Re",
+      "repeat": 1,
+      "n_samples": 176,
+      "checks_passed": true
+    },
+    {
+      "target": "Re",
+      "repeat": 2,
+      "n_samples": 176,
+      "checks_passed": true
+    },
+    {
+      "target": "A",
+      "repeat": 0,
+      "n_samples": 189,
+      "checks_passed": true
+    },
+    {
+      "target": "A",
+      "repeat": 1,
+      "n_samples": 189,
+      "checks_passed": true
+    },
+    {
+      "target": "A",
+      "repeat": 2,
+      "n_samples": 189,
+      "checks_passed": true
+    },
+    {
+      "target": "Ak",
+      "repeat": 0,
+      "n_samples": 199,
+      "checks_passed": true
+    },
+    {
+      "target": "Ak",
+      "repeat": 1,
+      "n_samples": 199,
+      "checks_passed": true
+    },
+    {
+      "target": "Ak",
+      "repeat": 2,
+      "n_samples": 199,
+      "checks_passed": true
+    }
+  ],
+  "max_decomposition_error": 3.097966327914037e-12,
+  "shap_features": [
+    "shap_C",
+    "shap_Si",
+    "shap_Mn",
+    "shap_Cr",
+    "shap_V",
+    "shap_Al",
+    "shap_Ni",
+    "shap_Mo",
+    "shap_Cu",
+    "shap_W",
+    "shap_Z",
+    "shap_Ve",
+    "shap_χP",
+    "shap_δb",
+    "shap_δf",
+    "shap_ΔFe",
+    "shap_ΔC",
+    "shap_Ta",
+    "shap_Ti",
+    "shap_ΔTA",
+    "shap_ΔTI",
+    "shap_τ",
+    "shap_Tt",
+    "shap_tt",
+    "shap_sph",
+    "shap_tmp",
+    "shap_Ceq",
+    "shap_Ta_Ti_diff",
+    "shap_C_DTI",
+    "shap_DC_Ti",
+    "shap_C_Cr",
+    "shap_ti"
+  ],
+  "repeat_policy": "compare each repeat before aggregation; no ensemble MAE",
+  "caveats": [
+    "Different training size, selected features, tuning and SHAP baseline: whole pipeline contrast, not a controlled zone-only causal effect.",
+    "SHAP differences are descriptive; not a material mechanism or an error attribution.",
+    "Three repeats are not independent samples; no significance tests.",
+    "Zone 6: six samples from one composition."
+  ]
+}

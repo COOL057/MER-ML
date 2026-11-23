@@ -1,0 +1,64 @@
+{
+  "features_composition": [
+    "C",
+    "Si",
+    "Mn",
+    "Cr",
+    "V",
+    "Al",
+    "Ni",
+    "Mo",
+    "Cu",
+    "W"
+  ],
+  "features_process_numeric": [
+    "Ta",
+    "Ti",
+    "ti",
+    "Tt",
+    "tt"
+  ],
+  "features_binary": [
+    "sph",
+    "tmp"
+  ],
+  "additional_flags": [
+    "Tt_missing",
+    "tt_missing"
+  ],
+  "log1p": [
+    "ti",
+    "tt"
+  ],
+  "block_weights": {
+    "composition": 0.5,
+    "processing": 0.5
+  },
+  "process_dimensions": 9,
+  "sample_percentile": "ECDF of training-set leave-one-row-out nearest distances per outer fold; not an independent percentile or calibrated error probability",
+  "risk_groups": {
+    "Rm_Re": [
+      0,
+      3,
+      6
+    ],
+    "A_Ak": [
+      6,
+      7,
+      8
+    ]
+  },
+  "note": "exploratory; sample-level repeated compositions, leave-zone-out test, empirical globally frozen zones; associations not causal; metric choice and R2 limitations",
+  "source_sha256": {
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\data_clean\\X_28dim.npy": "c4948a5b069c1b745ddb4e8c71ab3402a2a471af225f8e0e253cc94f8ef3ca92",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\data_clean\\composition_at_percent.csv": "5e2078c8014d1a21833c5b06cf4c72526435d140b32d25386cce47eccb9b600b",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\data_clean\\y_Rm.npy": "191a429d096c6f391d73802b6e06d4523cbfc4cab4d7eb953ed301a32d881eba",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\data_clean\\y_Re.npy": "82a8db7a59a52c139a9ba4339d66a38541f179ef6818565185d79bb0cb89daa1",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\data_clean\\y_A.npy": "829605faa293ed1b75e066f109ae9896d6929835ca91ae49334a1e3943b72c43",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\data_clean\\y_Ak.npy": "fde862c29d908d2f776952a240ed5000d5373a2b9c9b20e10470cc0b5d28bcbb",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\Rm_lopzo_predictions.csv": "c12ed0688c0f43f7683464358a1a40bd4d826021443aee0d746c32ba6574b50b",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\Re_lopzo_predictions.csv": "8ed5620869b3cca6753c9c48c37f7afabff513f518051108c5344adc0e45e0ea",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\A_lopzo_predictions.csv": "e1d49da711b16a90e0e505b1f8d7789747fa05c82a3920dc81911d77b9882695",
+    "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\Ak_lopzo_predictions.csv": "36a29855bc8756237ffb60ed6b1ccf8e5122aa9bd93a0a799a89e4e11e77829f"
+  }
+}

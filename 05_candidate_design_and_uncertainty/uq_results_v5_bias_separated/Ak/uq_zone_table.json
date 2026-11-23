@@ -1,0 +1,89 @@
+{
+  "target": "Ak",
+  "coverage": 0.9,
+  "global_q_ref": 30.2286,
+  "unit": "J",
+  "zones": {
+    "0": {
+      "zone_label": "Low Delta_TI x Short tau",
+      "role": "other",
+      "n": 19,
+      "q_final": 29.2851,
+      "t_factor": 1.038,
+      "actual_coverage": 0.9474,
+      "note": "other|global_q=30.23(ref)"
+    },
+    "1": {
+      "zone_label": "Low Delta_TI x Mid tau",
+      "role": "other",
+      "n": 25,
+      "q_final": 37.0453,
+      "t_factor": 1.0282,
+      "actual_coverage": 0.92,
+      "note": "other|global_q=30.23(ref)"
+    },
+    "2": {
+      "zone_label": "Low Delta_TI x Long tau",
+      "role": "other",
+      "n": 20,
+      "q_final": 31.3157,
+      "t_factor": 1.036,
+      "actual_coverage": 0.95,
+      "note": "other|global_q=30.23(ref)"
+    },
+    "3": {
+      "zone_label": "Mid Delta_TI x Short tau",
+      "role": "other",
+      "n": 20,
+      "q_final": 28.2311,
+      "t_factor": 1.036,
+      "actual_coverage": 0.95,
+      "note": "other|global_q=30.23(ref)"
+    },
+    "4": {
+      "zone_label": "Mid Delta_TI x Mid tau",
+      "role": "other",
+      "n": 25,
+      "q_final": 21.402,
+      "t_factor": 1.0282,
+      "actual_coverage": 0.92,
+      "note": "other|global_q=30.23(ref)"
+    },
+    "5": {
+      "zone_label": "Mid Delta_TI x Long tau",
+      "role": "other",
+      "n": 18,
+      "q_final": 28.9851,
+      "t_factor": 1.0404,
+      "actual_coverage": 0.9444,
+      "note": "other|global_q=30.23(ref)"
+    },
+    "6": {
+      "zone_label": "High Delta_TI x Short tau",
+      "role": "warning",
+      "n": 6,
+      "q_final": 11.4862,
+      "t_factor": 1.1516,
+      "actual_coverage": 1.0,
+      "note": "HIGH_RISK|global_q=30.23(ref)"
+    },
+    "7": {
+      "zone_label": "High Delta_TI x Mid tau",
+      "role": "calibration",
+      "n": 32,
+      "q_final": 29.0397,
+      "t_factor": 1.0217,
+      "actual_coverage": 0.9062,
+      "note": "calibration|global_q=30.23(ref)"
+    },
+    "8": {
+      "zone_label": "High Delta_TI x Long tau",
+      "role": "calibration",
+      "n": 34,
+      "q_final": 37.0899,
+      "t_factor": 1.0204,
+      "actual_coverage": 0.9118,
+      "note": "calibration|global_q=30.23(ref)"
+    }
+  }
+}

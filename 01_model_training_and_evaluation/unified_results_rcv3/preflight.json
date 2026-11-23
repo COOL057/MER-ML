@@ -1,0 +1,30 @@
+{
+  "python": "/home/student03/.conda/envs/steel_han/bin/python",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "catboost": "1.2.8",
+    "optuna": "4.7.0",
+    "openpyxl": "3.1.5"
+  },
+  "sample_count": 217,
+  "composition_count": 47,
+  "valid_targets": {
+    "Rm": 189,
+    "Re": 176,
+    "A": 189,
+    "Ak": 199
+  },
+  "zone_counts": {
+    "0": 21,
+    "1": 31,
+    "2": 20,
+    "3": 29,
+    "4": 26,
+    "5": 18,
+    "6": 6,
+    "7": 32,
+    "8": 34
+  }
+}

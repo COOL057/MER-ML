@@ -1,0 +1,136 @@
+{
+  "target": "Ak",
+  "model_type": "optimized_catboost_v4_FE_dynamic",
+  "input_dim": 15,
+  "feature_names": [
+    "δf",
+    "Si",
+    "Ti",
+    "ΔC",
+    "Ta",
+    "ΔTI",
+    "τ",
+    "Mn",
+    "Al",
+    "ΔTA",
+    "Ta_Ti_diff",
+    "Ceq",
+    "C_Cr",
+    "C_DTI",
+    "DC_Ti"
+  ],
+  "remove_low_info_features": false,
+  "low_info_features_removed": [],
+  "selected_base_features": [
+    "δf",
+    "Si",
+    "Ti",
+    "ΔC",
+    "Ta",
+    "ΔTI",
+    "τ",
+    "Mn",
+    "Al",
+    "ΔTA"
+  ],
+  "selected_interaction_features": [
+    "Ta_Ti_diff",
+    "Ceq",
+    "C_Cr",
+    "C_DTI",
+    "DC_Ti"
+  ],
+  "optimization_r2": 0.7838514610560989,
+  "final_r2": 0.7412711697561375,
+  "final_std": 0.019782103781835144,
+  "best_params": {
+    "depth": 6,
+    "learning_rate": 0.19998312195798698,
+    "iterations": 561,
+    "l2_leaf_reg": 9.718342249754343,
+    "min_data_in_leaf": 8,
+    "subsample": 0.7261957997338652,
+    "bagging_temperature": 1.3936689807979263,
+    "random_strength": 23.992895662315476,
+    "colsample_bylevel": 0.584992995237652,
+    "avg_best_iteration": 293
+  },
+  "final_iterations": 351,
+  "avg_best_iteration": 293,
+  "n_trials": 400,
+  "early_stopped": false,
+  "feature_importance": [
+    2.9216409038006543,
+    9.01363337043937,
+    9.419281404424812,
+    3.187189639121428,
+    3.995136644719314,
+    4.103073069634,
+    5.359324664633205,
+    6.49914583441135,
+    5.054450005981493,
+    6.528731799801727,
+    7.786664174084805,
+    10.207097982690911,
+    10.68827101667767,
+    7.0478130316175225,
+    8.188546457961728
+  ],
+  "search_space": {
+    "depth": {
+      "low": 3,
+      "high": 8,
+      "type": "int"
+    },
+    "learning_rate": {
+      "low": 0.02,
+      "high": 0.2,
+      "type": "float",
+      "log": true
+    },
+    "iterations": {
+      "low": 80,
+      "high": 1000,
+      "type": "int"
+    },
+    "l2_leaf_reg": {
+      "low": 8.0,
+      "high": 300.0,
+      "type": "float",
+      "log": true
+    },
+    "min_data_in_leaf": {
+      "low": 2,
+      "high": 40,
+      "type": "int"
+    },
+    "subsample": {
+      "low": 0.45,
+      "high": 0.75,
+      "type": "float"
+    },
+    "bagging_temperature": {
+      "low": 1.0,
+      "high": 6.0,
+      "type": "float"
+    },
+    "random_strength": {
+      "low": 3.0,
+      "high": 60.0,
+      "type": "float",
+      "log": true
+    },
+    "colsample_bylevel": {
+      "low": 0.45,
+      "high": 0.8,
+      "type": "float"
+    }
+  },
+  "optimization_strategy": {},
+  "n_splits": 10,
+  "loss_function": "RMSE",
+  "use_log_transform": false,
+  "use_winsorize": false,
+  "model_path": "/home/student03/tree_model_v2/optimized_catboost/results_final/EXP_3_Stability/Ak_EXP_3_Stability_Ak/Ak_final_model.cbm",
+  "config_path": "/home/student03/tree_model_v2/optimized_catboost/results_final/EXP_3_Stability/Ak_EXP_3_Stability_Ak/Ak_model_config.json"
+}

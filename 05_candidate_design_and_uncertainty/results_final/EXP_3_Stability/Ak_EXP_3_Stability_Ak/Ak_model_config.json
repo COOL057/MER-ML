@@ -1,0 +1,36 @@
+{
+  "best_params": {
+    "depth": 6,
+    "learning_rate": 0.19998312195798698,
+    "iterations": 561,
+    "l2_leaf_reg": 9.718342249754343,
+    "min_data_in_leaf": 8,
+    "subsample": 0.7261957997338652,
+    "bagging_temperature": 1.3936689807979263,
+    "random_strength": 23.992895662315476,
+    "colsample_bylevel": 0.584992995237652,
+    "avg_best_iteration": 293
+  },
+  "final_iterations": 351,
+  "avg_best_iteration": 293,
+  "feature_names": [
+    "δf",
+    "Si",
+    "Ti",
+    "ΔC",
+    "Ta",
+    "ΔTI",
+    "τ",
+    "Mn",
+    "Al",
+    "ΔTA",
+    "Ta_Ti_diff",
+    "Ceq",
+    "C_Cr",
+    "C_DTI",
+    "DC_Ti"
+  ],
+  "loss_function": "RMSE",
+  "use_log_transform": false,
+  "log_offset": null
+}

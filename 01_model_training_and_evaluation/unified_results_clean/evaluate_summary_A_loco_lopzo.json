@@ -1,0 +1,37 @@
+[
+  {
+    "target": "A",
+    "overall": {
+      "r2": 0.6585020511578112,
+      "mae": 2.8113596999809904,
+      "rmse": 4.029724100934237,
+      "n_samples": 189
+    },
+    "complete": true,
+    "scenario": "loco",
+    "n_completed_folds": 43,
+    "feature_mode": "knowledge15",
+    "n_eligible": 43
+  },
+  {
+    "target": "A",
+    "overall": {
+      "r2": 0.7467595689586741,
+      "mae": 2.0199382216780672,
+      "rmse": 3.4701463014166363,
+      "n_samples": 189
+    },
+    "complete": true,
+    "scenario": "lopzo",
+    "n_completed_folds": 9,
+    "feature_mode": "knowledge15",
+    "dti_thresholds": [
+      25.992800000000003,
+      52.01440000000002
+    ],
+    "tau_thresholds": [
+      1.0,
+      1.6139453980627756
+    ]
+  }
+]

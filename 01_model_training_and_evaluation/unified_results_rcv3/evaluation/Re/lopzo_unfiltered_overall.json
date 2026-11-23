@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "r2": 0.546235461450014,
+    "mae": 152.57584649282123,
+    "rmse": 231.86367963464636,
+    "n_samples": 176
+  },
+  "complete": true,
+  "scenario": "lopzo",
+  "n_completed_folds": 9,
+  "feature_mode": "knowledge15",
+  "dti_thresholds": [
+    25.992800000000003,
+    52.01440000000002
+  ],
+  "tau_thresholds": [
+    1.0,
+    1.6139453980627756
+  ]
+}

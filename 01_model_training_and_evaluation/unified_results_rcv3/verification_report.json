@@ -1,0 +1,30 @@
+[
+  {
+    "target": "Rm",
+    "scenario": "rcv",
+    "n_folds": 30,
+    "complete": true,
+    "checks_passed": true
+  },
+  {
+    "target": "Re",
+    "scenario": "rcv",
+    "n_folds": 30,
+    "complete": true,
+    "checks_passed": true
+  },
+  {
+    "target": "A",
+    "scenario": "rcv",
+    "n_folds": 30,
+    "complete": true,
+    "checks_passed": true
+  },
+  {
+    "target": "Ak",
+    "scenario": "rcv",
+    "n_folds": 30,
+    "complete": true,
+    "checks_passed": true
+  }
+]

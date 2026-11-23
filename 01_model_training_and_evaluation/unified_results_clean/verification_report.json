@@ -1,0 +1,16 @@
+[
+  {
+    "target": "Ak",
+    "scenario": "loco",
+    "n_folds": 44,
+    "complete": true,
+    "checks_passed": true
+  },
+  {
+    "target": "Ak",
+    "scenario": "lopzo",
+    "n_folds": 9,
+    "complete": true,
+    "checks_passed": true
+  }
+]

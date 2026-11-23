@@ -1,0 +1,23 @@
+{
+  "target": "Ak",
+  "scenario": "rcv",
+  "fold": "repeat_02_fold_03",
+  "files_sha256": {
+    "model.cbm": "8453c1f2e34ccae74e4943b1971f327e8c553703d8830922a8f59fcc6795c771",
+    "model_config.json": "3979a7e24f8ee5cec6fbb01825a10068425ccf8fa454fd942c36f3053f03822c",
+    "outer_features.json": "4cfd283f82891bdbe2d227d63447ba398af04441cc88c5ca22f8bbe58a715552",
+    "split_audit.json": "82ef259aa03e043577d130249ac24619bda37d095bd60602aa49fba74457b3e3",
+    "optimization_trials.csv": "77ce29695059201e00bdd0a4632e022c2d607238d8ea121120e2e37f09660c0f",
+    "predictions.csv": "142c2dded8cd6a241494394785011350bf8f9b8b27b0129935bdf86791e0ae98",
+    "inner_00_features.json": "6d32c669200f62f1afc198fa758d354e40245678f79f354f1c2322cdfcadd3e9",
+    "inner_01_features.json": "d3c104b823c30c854647e29ade1e129011978a8d912c4bb45cd0339fe0ed8429",
+    "inner_02_features.json": "f672fa2c55af71357c9dd462eb388630cebb2f6f2c1fc5559d0402a4b8770746",
+    "inner_03_features.json": "cd04d8cf79f6c41a7cbe36d554d3cb9175d8f4bd000e5e8973e903a364ab93da",
+    "inner_04_features.json": "7594faa3002066c314ea89ceb910742ad7e3b983497d40a691419f0594e1d77d",
+    "inner_05_features.json": "75dacd694e1348d28d1546a26c802a9317688f68a98278f5b08c538ca67fbd36",
+    "inner_06_features.json": "01c37bce1bea2390daad04e52661ea05fd4153c2486bbd5113105cd58422b7b3",
+    "inner_07_features.json": "1f35c47430ee9bbff2051d714963c036d84cb03dfbc6240239c67090988717c8",
+    "inner_08_features.json": "5ee1c05916e691803b333710761d132a9ee30bb6ed4f9384dc82161678776e41",
+    "inner_09_features.json": "709bae576ad9c669351d60d74d3f835e0e8935e0453db9d79c75a64f294de0b5"
+  }
+}

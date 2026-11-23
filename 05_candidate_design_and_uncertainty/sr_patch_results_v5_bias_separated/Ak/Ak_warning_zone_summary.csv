@@ -1,0 +1,2 @@
+target,zone_id,zone_label,role,sample_size,mean_residual,std_residual,MAE_base,RMSE_base,R2_base,action
+Ak,6,High Delta_TI x Short tau,warning_only,6,-4.518159038677154,5.001116355507081,5.075070577116173,6.739801621717103,0.8013487205534964,No bias correction and no SR compensation; use risk warning and uncertainty quantification.

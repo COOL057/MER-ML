@@ -1,0 +1,5 @@
+﻿target,n,n_compositions,spearman_distance_error,spearman_percentile_error,note
+Rm,189,43,0.13938461263269808,0.13771504076487495,"descriptive; no p-values, dependent records and fold differences"
+Re,176,41,0.08406492318004156,0.08270493469035779,"descriptive; no p-values, dependent records and fold differences"
+A,189,43,0.22010516514518502,0.22214360869123387,"descriptive; no p-values, dependent records and fold differences"
+Ak,199,44,0.2807563909329267,0.2773230746106742,"descriptive; no p-values, dependent records and fold differences"

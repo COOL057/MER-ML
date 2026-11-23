@@ -1,0 +1,21 @@
+{
+  "target_name": "Ak",
+  "description": " 10折CV + 关闭Winsorize + RMSE",
+  "n_trials": 250,
+  "early_stopping_patience": 150,
+  "n_splits": 10,
+  "loss_function": "RMSE",
+  "use_log_transform": false,
+  "use_winsorize": false,
+  "search_space": {
+    "depth": {"low": 3, "high": 8, "type": "int"},
+    "learning_rate": {"low": 0.02, "high": 0.20, "type": "float", "log": true},
+    "iterations": {"low": 80, "high": 1000, "type": "int"},
+    "l2_leaf_reg": {"low": 8.0, "high": 300.0, "type": "float", "log": true},
+    "min_data_in_leaf": {"low": 2, "high": 40, "type": "int"},
+    "subsample": {"low": 0.45, "high": 0.75, "type": "float"},
+    "bagging_temperature": {"low": 1.0, "high": 6.0, "type": "float"},
+    "random_strength": {"low": 3.0, "high": 60.0, "type": "float", "log": true},
+    "colsample_bylevel": {"low": 0.45, "high": 0.80, "type": "float"}
+  }
+}

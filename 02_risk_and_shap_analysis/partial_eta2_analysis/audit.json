@@ -1,0 +1,239 @@
+{
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.2",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.0",
+    "patsy": "0.5.3"
+  },
+  "old_results_reproduced": true,
+  "source_files": [
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\Rm_lopzo_predictions.csv",
+      "sha256": "c12ed0688c0f43f7683464358a1a40bd4d826021443aee0d746c32ba6574b50b"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\Re_lopzo_predictions.csv",
+      "sha256": "8ed5620869b3cca6753c9c48c37f7afabff513f518051108c5344adc0e45e0ea"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\A_lopzo_predictions.csv",
+      "sha256": "e1d49da711b16a90e0e505b1f8d7789747fa05c82a3920dc81911d77b9882695"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\AI\\leakage_fix_v1\\unified_results_clean\\residuals\\Ak_lopzo_predictions.csv",
+      "sha256": "36a29855bc8756237ffb60ed6b1ccf8e5122aa9bd93a0a799a89e4e11e77829f"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\.workbuddy\\论文图\\AAA-脚本可视化\\AA5_成分新颖与工艺分区耦合\\unified_results_clean\\residuals\\Rm_lopzo_residuals.pkl",
+      "sha256": "05e52115d764769b67ebf9592206a2f4478ff67219ffa482a283b86d8dd03856"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\.workbuddy\\论文图\\AAA-脚本可视化\\AA5_成分新颖与工艺分区耦合\\unified_results_clean\\residuals\\Re_lopzo_residuals.pkl",
+      "sha256": "7d860c50625bdb64337a7203b13bd947323a712544a79462015cd55dcb4e34d4"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\.workbuddy\\论文图\\AAA-脚本可视化\\AA5_成分新颖与工艺分区耦合\\unified_results_clean\\residuals\\A_lopzo_residuals.pkl",
+      "sha256": "15caaf870a7cf81e44611a35e96e02f0626a618115dcd47e433b7644923b408f"
+    },
+    {
+      "file": "G:\\AAA_图神经网络\\论文\\.workbuddy\\论文图\\AAA-脚本可视化\\AA5_成分新颖与工艺分区耦合\\unified_results_clean\\residuals\\Ak_lopzo_residuals.pkl",
+      "sha256": "daff7a909e8dd14f1f292d62e6f24ebd6012d8dbea6e73bdea44160dad152ff6"
+    }
+  ],
+  "diagnostics": [
+    {
+      "target": "Rm",
+      "analysis": "original_method_all9",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 164.0,
+      "n_observations": 189,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 224.66591743433435
+    },
+    {
+      "target": "Rm",
+      "analysis": "complete_crossing_zones_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 24,
+      "columns": 24,
+      "df_error": 159.0,
+      "n_observations": 183,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 216.49571978106778
+    },
+    {
+      "target": "Rm",
+      "analysis": "additive_all9_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) + C(zone_id, Sum)",
+      "rank": 11,
+      "columns": 11,
+      "df_error": 178.0,
+      "n_observations": 189,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 237.75882332100946
+    },
+    {
+      "target": "Rm",
+      "analysis": "old_reproduction",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 164.0,
+      "n_observations": 189,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 213.5443577926681
+    },
+    {
+      "target": "Re",
+      "analysis": "original_method_all9",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 151.0,
+      "n_observations": 176,
+      "n_compositions": 41,
+      "warnings": [],
+      "ss_error": 153.0867222115182
+    },
+    {
+      "target": "Re",
+      "analysis": "complete_crossing_zones_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 24,
+      "columns": 24,
+      "df_error": 146.0,
+      "n_observations": 170,
+      "n_compositions": 41,
+      "warnings": [],
+      "ss_error": 152.65000133089393
+    },
+    {
+      "target": "Re",
+      "analysis": "additive_all9_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) + C(zone_id, Sum)",
+      "rank": 11,
+      "columns": 11,
+      "df_error": 165.0,
+      "n_observations": 176,
+      "n_compositions": 41,
+      "warnings": [],
+      "ss_error": 164.4063525941367
+    },
+    {
+      "target": "Re",
+      "analysis": "old_reproduction",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 151.0,
+      "n_observations": 176,
+      "n_compositions": 41,
+      "warnings": [],
+      "ss_error": 169.77903168340617
+    },
+    {
+      "target": "A",
+      "analysis": "original_method_all9",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 164.0,
+      "n_observations": 189,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 46.18073594956998
+    },
+    {
+      "target": "A",
+      "analysis": "complete_crossing_zones_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 24,
+      "columns": 24,
+      "df_error": 159.0,
+      "n_observations": 183,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 45.79739433052459
+    },
+    {
+      "target": "A",
+      "analysis": "additive_all9_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) + C(zone_id, Sum)",
+      "rank": 11,
+      "columns": 11,
+      "df_error": 178.0,
+      "n_observations": 189,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 62.733434669527405
+    },
+    {
+      "target": "A",
+      "analysis": "old_reproduction",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 164.0,
+      "n_observations": 189,
+      "n_compositions": 43,
+      "warnings": [],
+      "ss_error": 46.30231010660604
+    },
+    {
+      "target": "Ak",
+      "analysis": "original_method_all9",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 174.0,
+      "n_observations": 199,
+      "n_compositions": 44,
+      "warnings": [],
+      "ss_error": 152.04090821944988
+    },
+    {
+      "target": "Ak",
+      "analysis": "complete_crossing_zones_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 24,
+      "columns": 24,
+      "df_error": 169.0,
+      "n_observations": 193,
+      "n_compositions": 44,
+      "warnings": [],
+      "ss_error": 144.94658259975458
+    },
+    {
+      "target": "Ak",
+      "analysis": "additive_all9_sensitivity",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) + C(zone_id, Sum)",
+      "rank": 11,
+      "columns": 11,
+      "df_error": 188.0,
+      "n_observations": 199,
+      "n_compositions": 44,
+      "warnings": [],
+      "ss_error": 171.12360870410265
+    },
+    {
+      "target": "Ak",
+      "analysis": "old_reproduction",
+      "formula": "log_abs_residual ~ C(novelty_layer, Sum) * C(zone_id, Sum)",
+      "rank": 25,
+      "columns": 27,
+      "df_error": 174.0,
+      "n_observations": 199,
+      "n_compositions": 44,
+      "warnings": [],
+      "ss_error": 125.29747289883056
+    }
+  ],
+  "note": "Original all9 Type III table has a rank-deficient factorial design. No reported p value is composition-cluster adjusted; exploratory/descriptive reanalysis only. Sensitivity subsets do not replace original data."
+}

@@ -1,0 +1,83 @@
+{
+  "description": "特征工程配置文件",
+  "version": "target_specific",
+  "methodology_notes": [
+    "精简的交互特征配置"
+  ],
+
+  "base_features": [
+    "C", "Si", "Mn", "Cr", "V", "Al", "Ni", "Mo", "Cu", "W",
+    "Z", "Ve", "χP", "δb", "δf", "ΔFe", "ΔC",
+    "Ta", "Ti", "ti", "ΔTA", "ΔTI", "τ", "Ms", "Tt", "tt", "sph", "tmp"
+  ],
+
+  "interaction_features": {
+    "Ceq": {
+      "formula": "C + Mn/6 + (Cr+Mo+V)/5 + (Ni+Cu)/15",
+      "description": "碳当量 ",
+      "indices": [0, 2, 3, 7, 4, 6, 8],
+      "operation": "carbon_equivalent",
+      "physical_basis": "各合金元素对淬透性的加权贡献"
+    },
+    "Ta_Ti_diff": {
+      "formula": "Ta - Ti",
+      "description": "冷却幅度 - 奥氏体化温度与等温温度之差",
+      "indices": [17, 18],
+      "operation": "subtract",
+      "physical_basis": "反映冷却过程中的温度变化幅度"
+    },
+    "C_DTI": {
+      "formula": "C * ΔTI",
+      "description": "碳含量×等温温差Ti-Ms ",
+      "indices": [0, 21],
+      "operation": "multiply",
+      "physical_basis": "等温温差Ti-Ms反映相变驱动力，C含量决定相变产物"
+    },
+    "DC_Ti": {
+      "formula": "ΔC * Ti",
+      "description": "电负性差×等温温度 ",
+      "indices": [16, 18],
+      "operation": "multiply",
+      "physical_basis": ""
+    },
+    "C_Cr": {
+      "formula": "C * Cr",
+      "description": "碳化物形成倾向",
+      "indices": [0, 3],
+      "operation": "multiply",
+      "physical_basis": " "
+    }
+  },
+
+  "target_feature_sets": {
+    "Rm": {
+      "description": "抗拉强度预测",
+      "interaction_features": ["Ceq", "Ta_Ti_diff", "C_DTI", "DC_Ti", "C_Cr"],
+      "low_info_features": ["sph", "tt"],
+      "remove_low_info_default": false
+    },
+    "Re": {
+      "description": "屈服强度预测",
+      "interaction_features": ["Ceq", "Ta_Ti_diff", "C_DTI", "DC_Ti", "C_Cr"],
+      "low_info_features": ["W", "Cu"],
+      "remove_low_info_default": false
+    },
+    "A": {
+      "description": "延伸率预测",
+      "interaction_features": ["Ceq", "Ta_Ti_diff", "C_DTI", "DC_Ti", "C_Cr"],
+      "low_info_features": ["sph", "tt"],
+      "remove_low_info_default": false
+    },
+    "Ak": {
+      "description": "冲击韧性预测",
+      "interaction_features": ["Ceq", "Ta_Ti_diff", "C_DTI", "DC_Ti", "C_Cr"],
+      "low_info_features": ["sph", "tt", "V", "W", "Cu"],
+      "remove_low_info_default": false
+    }
+  },
+
+  "validation_notes": {
+    "feature_count_warning": "样本量约200，特征数应控制在30以内为宜",
+    "dynamic_selection": "支持命令行"
+  }
+}

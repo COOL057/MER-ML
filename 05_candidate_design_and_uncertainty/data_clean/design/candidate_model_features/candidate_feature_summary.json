@@ -1,0 +1,62 @@
+{
+  "input": "G:\\AAA_图神经网络\\optimized_catboost\\data_clean\\design\\07002 Ms and A3.xls",
+  "rows_in": 1000,
+  "variants_per_composition": 6,
+  "rows_out": 6000,
+  "decimals": 3,
+  "dTI_ranges": {
+    "low": [
+      0.0,
+      25.9928
+    ],
+    "mid": [
+      25.9928,
+      52.0144
+    ],
+    "high": [
+      52.0144,
+      110.8
+    ]
+  },
+  "tau_ranges": {
+    "short": [
+      0.133333,
+      1.0
+    ],
+    "mid": [
+      1.0,
+      1.6139454
+    ],
+    "long": [
+      1.6139454,
+      3.754972
+    ]
+  },
+  "ta_offsets": [
+    30.0,
+    40.0,
+    50.0
+  ],
+  "tempering_rule": {
+    "probability": 0.5,
+    "if_tempered": {
+      "Tt": 320.0,
+      "tt": 60.0,
+      "tmp": 1.0
+    },
+    "if_not_tempered": {
+      "Tt": 0.0,
+      "tt": 0.0,
+      "tmp": 0.0
+    }
+  },
+  "t_isothermal_rule": "unknown for design candidates; not sampled; excluded from 31D and target-specific 15D model inputs",
+  "outputs": [
+    "candidate_metadata.csv",
+    "candidate_X_28dim.csv",
+    "candidate_X_31dim.csv",
+    "candidate_X_28dim.npy",
+    "candidate_X_31dim.npy",
+    "candidate_model_input_{target}_15dim.csv/npy"
+  ]
+}

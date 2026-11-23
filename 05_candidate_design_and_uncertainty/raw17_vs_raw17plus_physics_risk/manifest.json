@@ -1,0 +1,33 @@
+{
+  "status": "exploratory; design informed by previous results; no independent external cohort",
+  "outer": "GroupKFold(5) by composition; not original process-zone LOPZO",
+  "inner": "GroupKFold(4) by composition within outer training to generate out-of-fold residual targets",
+  "property_model": "fixed 17-feature CatBoost 500 trees depth6 lr.05 l2=3; same predictions shared by risk models; not original tuned predictor",
+  "risk_model": "Ridge alpha=10 on 17 original variables vs same 17 plus deltaTI and log1p(tau); training-only median imputation and standardization; equal total weight per training composition",
+  "feature_transformation": "log1p(ti) in both risk models; add deltaTI,log1p(tau) in augmented model",
+  "label": "outer abs error greater than the 80th percentile of inner-OOF training errors for that fold",
+  "budget": "highest ceil(20% outer fold size) per model; deterministic sample-ID tie breaking",
+  "cautions": [
+    "Original feature-only model includes composition and other process features. 19-feature model tests augmentation under chosen Ridge, not all possible classifiers.",
+    "Inner property models train on fewer observations than the outer predictor, so error-distribution thresholds can be miscalibrated.",
+    "Outer folds share training data; groups or data sources may be dependent; exploratory no confirmatory p values.",
+    "No external dataset; group holdout addresses unseen composition, not necessarily process region extrapolation.",
+    "Physical descriptors may derive from experimental or computed transformation information; acquisition and deployment assumptions matter.",
+    "Small event counts. No claim of causation, equivalence, or universal superiority."
+  ],
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "catboost": "1.2.7"
+  },
+  "source_sha256": {
+    "X_28dim.npy": "c4948a5b069c1b745ddb4e8c71ab3402a2a471af225f8e0e253cc94f8ef3ca92",
+    "composition_at_percent.csv": "5e2078c8014d1a21833c5b06cf4c72526435d140b32d25386cce47eccb9b600b",
+    "y_Rm.npy": "191a429d096c6f391d73802b6e06d4523cbfc4cab4d7eb953ed301a32d881eba",
+    "y_Re.npy": "82a8db7a59a52c139a9ba4339d66a38541f179ef6818565185d79bb0cb89daa1",
+    "y_A.npy": "829605faa293ed1b75e066f109ae9896d6929835ca91ae49334a1e3943b72c43",
+    "y_Ak.npy": "fde862c29d908d2f776952a240ed5000d5373a2b9c9b20e10470cc0b5d28bcbb"
+  },
+  "script_sha256": "c7bc0533de95a3f44f0969da6e11ca1fd3d060bf7db218186093e87e7a15d2d2"
+}

@@ -1,0 +1,445 @@
+{
+  "input_file": "G:\\AAA_图神经网络\\optimized_catboost\\data_clean\\design\\ori_data.xlsx",
+  "input_rows": 217,
+  "unique_compositions": 47,
+  "subspace_counts": {
+    "Cr_Ni_Mo_tough": 15,
+    "base_Cr_Mn_Si_Al": 12,
+    "high_C_Cr_Mo_wear": 8,
+    "CuW_exploratory": 7,
+    "high_Si_carbide_free": 5
+  },
+  "weight_mode": "balanced_main",
+  "sampling_weights": {
+    "Cr_Ni_Mo_tough": 0.2375,
+    "CuW_exploratory": 0.05,
+    "base_Cr_Mn_Si_Al": 0.2375,
+    "high_C_Cr_Mo_wear": 0.2375,
+    "high_Si_carbide_free": 0.2375
+  },
+  "global_filters": {
+    "S_min": 3.57295,
+    "S_max": 8.11335,
+    "N_active_min": 4.0,
+    "N_active_max": 8.0,
+    "CE_IIW_max": 1.59291,
+    "carbide_ratio_max": 1.96375,
+    "hardenability_index_max": 4.224,
+    "rare_alloy_sum_max": 2.0372
+  },
+  "subspace_bounds": {
+    "Cr_Ni_Mo_tough": {
+      "n_reference": 15,
+      "description": "Cr/Ni/Mo high-strength and toughness-oriented bainitic route",
+      "required": [
+        "C",
+        "Si",
+        "Mn",
+        "Ni",
+        "Mo"
+      ],
+      "optional": [
+        "Cr",
+        "Al",
+        "V"
+      ],
+      "forbidden": [
+        "Cu",
+        "W"
+      ],
+      "elements": {
+        "C": {
+          "low": 0.197,
+          "high": 0.5014,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Si": {
+          "low": 0.7575,
+          "high": 1.730175,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 0.933333
+        },
+        "Mn": {
+          "low": 1.456,
+          "high": 2.5231,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Cr": {
+          "low": 0.95,
+          "high": 1.994675,
+          "activation_probability": 0.8,
+          "historical_positive_frequency": 0.8
+        },
+        "V": {
+          "low": 0.085,
+          "high": 0.0989,
+          "activation_probability": 0.266667,
+          "historical_positive_frequency": 0.266667
+        },
+        "Al": {
+          "low": 0.174,
+          "high": 1.42945,
+          "activation_probability": 0.85,
+          "historical_positive_frequency": 1.0
+        },
+        "Ni": {
+          "low": 0.17,
+          "high": 1.0695,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Mo": {
+          "low": 0.19,
+          "high": 0.4899,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Cu": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.133333
+        },
+        "W": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        }
+      }
+    },
+    "CuW_exploratory": {
+      "n_reference": 7,
+      "description": "Low-frequency Cu/W exploratory alloying route",
+      "required": [
+        "C",
+        "Si",
+        "Mn"
+      ],
+      "optional": [
+        "Cr",
+        "Al",
+        "Ni",
+        "Mo",
+        "Cu",
+        "W"
+      ],
+      "forbidden": [
+        "V"
+      ],
+      "elements": {
+        "C": {
+          "low": 0.269,
+          "high": 0.89631,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Si": {
+          "low": 1.253,
+          "high": 2.18385,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Mn": {
+          "low": 0.9181,
+          "high": 3.2085,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Cr": {
+          "low": 0.848,
+          "high": 1.74915,
+          "activation_probability": 0.714286,
+          "historical_positive_frequency": 0.714286
+        },
+        "V": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        },
+        "Al": {
+          "low": 0.9525,
+          "high": 1.601375,
+          "activation_probability": 0.85,
+          "historical_positive_frequency": 0.857143
+        },
+        "Ni": {
+          "low": 0.5,
+          "high": 1.230212,
+          "activation_probability": 0.85,
+          "historical_positive_frequency": 0.857143
+        },
+        "Mo": {
+          "low": 0.23,
+          "high": 0.430445,
+          "activation_probability": 0.571429,
+          "historical_positive_frequency": 0.571429
+        },
+        "Cu": {
+          "low": 0.58425,
+          "high": 2.12405,
+          "activation_probability": 0.571429,
+          "historical_positive_frequency": 0.571429
+        },
+        "W": {
+          "low": 0.8736,
+          "high": 1.90509,
+          "activation_probability": 0.428571,
+          "historical_positive_frequency": 0.428571
+        }
+      }
+    },
+    "base_Cr_Mn_Si_Al": {
+      "n_reference": 12,
+      "description": "Base C-Si-Mn-(Cr,Al) bainitic steel route",
+      "required": [
+        "C",
+        "Si",
+        "Mn"
+      ],
+      "optional": [
+        "Cr",
+        "Al",
+        "V",
+        "Mo"
+      ],
+      "forbidden": [
+        "Ni",
+        "Cu",
+        "W"
+      ],
+      "elements": {
+        "C": {
+          "low": 0.24,
+          "high": 0.8832,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Si": {
+          "low": 0.733,
+          "high": 1.896925,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Mn": {
+          "low": 0.63,
+          "high": 2.3138,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Cr": {
+          "low": 0.898,
+          "high": 1.2765,
+          "activation_probability": 0.75,
+          "historical_positive_frequency": 0.75
+        },
+        "V": {
+          "low": 0.11,
+          "high": 0.1265,
+          "activation_probability": 0.25,
+          "historical_positive_frequency": 0.25
+        },
+        "Al": {
+          "low": 0.0245,
+          "high": 0.90965,
+          "activation_probability": 0.833333,
+          "historical_positive_frequency": 0.833333
+        },
+        "Ni": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        },
+        "Mo": {
+          "low": 0.17,
+          "high": 0.7659,
+          "activation_probability": 0.416667,
+          "historical_positive_frequency": 0.416667
+        },
+        "Cu": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.083333
+        },
+        "W": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.083333
+        }
+      }
+    },
+    "high_C_Cr_Mo_wear": {
+      "n_reference": 8,
+      "description": "High-C Cr/Mo high-strength or wear-resistant bainitic route",
+      "required": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr"
+      ],
+      "optional": [
+        "V",
+        "Al",
+        "Mo"
+      ],
+      "forbidden": [
+        "Ni",
+        "Cu",
+        "W"
+      ],
+      "elements": {
+        "C": {
+          "low": 0.801,
+          "high": 1.2075,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Si": {
+          "low": 0.451,
+          "high": 1.72845,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Mn": {
+          "low": 0.24,
+          "high": 0.485875,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Cr": {
+          "low": 1.487,
+          "high": 1.824475,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "V": {
+          "low": 0.12,
+          "high": 0.138,
+          "activation_probability": 0.15,
+          "historical_positive_frequency": 0.125
+        },
+        "Al": {
+          "low": 0.0541,
+          "high": 1.014415,
+          "activation_probability": 0.375,
+          "historical_positive_frequency": 0.375
+        },
+        "Ni": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        },
+        "Mo": {
+          "low": 0.34,
+          "high": 0.43125,
+          "activation_probability": 0.75,
+          "historical_positive_frequency": 0.75
+        },
+        "Cu": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        },
+        "W": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        }
+      }
+    },
+    "high_Si_carbide_free": {
+      "n_reference": 5,
+      "description": "High-Si carbide-free bainitic route",
+      "required": [
+        "C",
+        "Si",
+        "Mn"
+      ],
+      "optional": [
+        "Cr",
+        "V",
+        "Al",
+        "Ni",
+        "Mo"
+      ],
+      "forbidden": [
+        "Cu",
+        "W"
+      ],
+      "elements": {
+        "C": {
+          "low": 0.312,
+          "high": 0.805,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Si": {
+          "low": 2.178,
+          "high": 2.967,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Mn": {
+          "low": 0.622,
+          "high": 1.932,
+          "activation_probability": 1.0,
+          "historical_positive_frequency": 1.0
+        },
+        "Cr": {
+          "low": 0.494,
+          "high": 1.3731,
+          "activation_probability": 0.85,
+          "historical_positive_frequency": 1.0
+        },
+        "V": {
+          "low": 0.12,
+          "high": 0.138,
+          "activation_probability": 0.2,
+          "historical_positive_frequency": 0.2
+        },
+        "Al": {
+          "low": 0.0435,
+          "high": 0.743475,
+          "activation_probability": 0.4,
+          "historical_positive_frequency": 0.4
+        },
+        "Ni": {
+          "low": 0.56,
+          "high": 0.644,
+          "activation_probability": 0.2,
+          "historical_positive_frequency": 0.2
+        },
+        "Mo": {
+          "low": 0.155,
+          "high": 0.44735,
+          "activation_probability": 0.6,
+          "historical_positive_frequency": 0.6
+        },
+        "Cu": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        },
+        "W": {
+          "low": 0.0,
+          "high": 0.0,
+          "activation_probability": 0.0,
+          "historical_positive_frequency": 0.0
+        }
+      }
+    }
+  },
+  "generated_candidates": 1000,
+  "output": "G:\\AAA_图神经网络\\optimized_catboost\\data_clean\\design\\candidate_output\\candidate_compositions.csv",
+  "summary": "G:\\AAA_图神经网络\\optimized_catboost\\data_clean\\design\\candidate_output\\candidate_space_summary.json"
+}

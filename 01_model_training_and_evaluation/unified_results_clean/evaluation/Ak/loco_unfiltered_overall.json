@@ -1,0 +1,13 @@
+{
+  "overall": {
+    "r2": 0.3435334408813827,
+    "mae": 22.67380752929973,
+    "rmse": 29.891992042954456,
+    "n_samples": 199
+  },
+  "complete": true,
+  "scenario": "loco",
+  "n_completed_folds": 44,
+  "feature_mode": "knowledge15",
+  "n_eligible": 44
+}

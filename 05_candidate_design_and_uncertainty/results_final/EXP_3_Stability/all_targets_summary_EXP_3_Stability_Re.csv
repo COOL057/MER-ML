@@ -1,0 +1,2 @@
+target,model_type,input_dim,remove_low_info,custom_base_features,custom_interaction_features,output_name,optimization_r2,final_r2,final_std,final_iterations,avg_best_iteration,n_trials,early_stopped
+Re,optimized_catboost_v4_FE_dynamic,15,False,True,True,EXP_3_Stability_Re,0.9023269471345994,0.8925767293989141,0.010545870505460733,414,345,400,False

@@ -1,0 +1,22 @@
+{
+
+  "target_name": "A",
+  "description": " 10折CV + 关闭Winsorize + RMSE",
+  "n_trials": 250,
+  "early_stopping_patience":150,
+  "n_splits": 10,
+  "loss_function": "RMSE",
+  "use_log_transform": false,
+  "use_winsorize": false,
+  "search_space": {
+    "depth": {"low": 4, "high": 8, "type": "int"},
+    "learning_rate": {"low": 0.05, "high": 0.20, "type": "float", "log": true},
+    "iterations": {"low": 150, "high": 1000, "type": "int"},
+    "l2_leaf_reg": {"low": 1.0, "high": 200.0, "type": "float", "log": true},
+    "min_data_in_leaf": {"low": 2, "high": 40, "type": "int"},
+    "subsample": {"low": 0.5, "high": 0.85, "type": "float"},
+    "bagging_temperature": {"low": 0.0, "high": 5.0, "type": "float"},
+    "random_strength": {"low": 0.5, "high": 30.0, "type": "float", "log": true},
+    "colsample_bylevel": {"low": 0.7, "high": 0.95, "type": "float"}
+  }
+}
